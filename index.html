@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>sedona-new</title>
+	<title>sedona</title>
 	<link rel="stylesheet" href="css/style.css"></head>
 <body>
+
 	<div class="wrapper">
 		<header class="header">
 			<nav class="menu">
@@ -25,33 +26,154 @@
 			</nav>
 			<div class="logo">
 				<a href="">
-					<img src="img/logo-sedona.png" alt="logo" width="138" height="70"></a>
+					<img src="" alt=""></a>
 			</div>
-		</header>
-		<div class="main-content"></div>
-		<div class="welcome">
-			<img class="welcom__sedona" src="img/welcom-sedona.png" alt="" width="1200" height="780">
-			<h1 class="welcome__title">
-				седона — небольшой городок в аризоне, 
-         заслуживающий большего!
-			</h1>
-			<p class="welcome__description">
-				Рассмотрим 5 причин, по которым седона круче, чем гранд каньон
-			</p>
-		</div>
-		<div class="reasons">
-			<div class="reason reason--blue">
-				<h2 class="reason__title">настоящий городок</h2>
-				<span class="reason__number">-№1-</span>
-				<p class="reason__text">
-					седона - не аттракцион для туристов, 
-                 там течет своя жизнь
-				</p>
-				<div class="reason__picture">
-					<img src="img/reason1.png" alt="" width="800" height="256"></div>
-			</div>
-		</div>
-	</div>
 
+		</header>
+
+		<div class="welcome">
+			<img src="" alt=""></div>
+
+		<article class="features">
+			<section class="features__header">
+				<h1 class="features__title">
+					седона — небольшой городок в аризоне, заслуживающий большего!
+				</h1>
+				<p class="features__description">
+					Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+				</p>
+			</section>
+			<!-- 1 -->
+
+			<div class="features-row">
+				<div class="feature feature--blue">
+					<h2 class="feature__title">настоящий городок</h2>
+					<span class="feature-number">-№1</span>
+					<p class="feature__text">седона — не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+
+				<div class="feature-picture">
+					<img src="" alt=""></div>
+			</div>
+
+			<!-- 2 -->
+			<div class="features__row">
+
+				<div class="feature feature--icon feature--icon-house">
+					<h2 class="feature__title">Жилье</h2>
+					<p class="feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+
+				<div class="feature feature--icon feature--icon-food">
+					<h2 class="feature__title">Еда</h2>
+					<p class="feature__text">всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+				</div>
+
+				<div class="feature feature--icon feature--icon-gift">
+					<h2 class="feature__title">Сувениры</h2>
+					<p class="feature__text">Не только китайского, но и местного производства!</p>
+				</div>
+			</div>
+
+			<!-- 3 -->
+			<div class="features-row features-row--reverse">
+				<div class="feature-picture">
+					<img src="" alt=""></div>
+
+				<div class="feature feature--blue">
+					<h2 class="feature__title">там есть мост дьявола</h2>
+					<span class="feature__number">-№2-</span>
+					<p class="feature__text">да, по нему можно пройти! если конечно вы осмелитесь</p>
+				</div>
+			</div>
+			<!-- 4 -->
+			<div class="features-row">
+				<div class="feature feature--gray">
+					<h2 class="feature__title">небольшая площадь</h2>
+					<span class="feature__number">- №3-</span>
+					<p class="feature__text">все достопримечательности находятся очень близко</p>
+				</div>
+
+				<div class="feature feature--gray">
+					<h2 class="feature__title">красивая дорога</h2>
+					<span class="feature__number">-№4-</span>
+					<p class="feature__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+				</div>
+
+				<div class="feature feature--gray">
+					<h2 class="feature__title">мало туристов</h2>
+					<span class="feature__number">-№5-</span>
+					<p class="feature__text">Большинство едет в гранд каньон и толпится там</p>
+				</div>
+			</div>
+		</article>
+
+		<div class="interest">
+			<h2 class="interest__title">заинтересовались?</h2>
+			<p class="interest__description">
+				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+			</p>
+			<button class="btn btn--booking">поиск гостиницы в седоне</button>
+		</div>
+
+		<div class="map"></div>
+
+		<form class="booking-form">
+		<div class="booking-form__row">
+			<label for="from">Дата заезда</label>
+			<input class="booking-form__field" type="text" id="from">
+			<button type="button" class="booking-form__calendar">Календарь</button>
+		</div>
+
+		<div class="booking-form__row">
+			<label for="from">Дата выезда</label>
+			<input class="booking-form__field" type="text" id="to">
+			<button type="button" class="booking-form__calendar">Календарь</button>
+		</div>
+
+		<div class="booking-form__row">
+			<div class="booking-form__col">
+				<label class="booking-form__label" for="number1">Взрослые:</label>
+				<div class="number">
+					<button class="number__btn number__btn--minus">Минус</button>
+					<input type="text" class="number__field" id="number1">
+					<button class="number__btn number__btn--plus">Плюс</button>
+				</div>
+
+				<div class="booking-form__col">
+					<label class="booking-form__label" for="number2">Дети:</label>
+					<div class="number">
+						<button class="number__btn number__btn--minus">Минус</button>
+						<input type="text" class="number__field" id="number2">
+						<button class="number__btn number__btn--plus">Плюс</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</form>
+
+	<footer class="footer">
+		<div class="footer__col">
+			<a href="#" class="hashtag">#visitsedona</a>
+		</div>
+		<div class="footer__col">
+			<div class="social">
+				<a href="#" class="social__btn social__btn--tw">Твиттер</a>
+				<a href="#" class="social__btn social__btn--fb">Фейсбук</a>
+				<a href="#" class="social__btn social__btn--yt">Ютуб</a>
+			</div>
+		</div>
+		<div class="footer__col">
+			<div class="copyright">
+				website by
+				<a href="#" class="copyright__link">
+					<img src="" alt=""></a>
+			</div>
+		</div>
+
+	</footer>
+
+</div>
 </body>
 </html>
